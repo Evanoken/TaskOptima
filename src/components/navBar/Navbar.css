@@ -3,7 +3,8 @@
     color: rgb(19, 10, 10);
     height: 50px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 200px;
     align-items: center;
     padding: 0 20px;
     position: fixed;
@@ -12,4 +13,26 @@
     z-index: 1;
     box-shadow: 0 2px 4px 0 rgba(129, 146, 161, 0.2);
     margin-left: 280px;
+}
+.nleft{
+    display: flex;
+    align-items: center;
+    background-color:white;
+    border-radius:20px;
+}
+.Navbar .nleft input{
+    height: 30px;
+    width: 500px;
+    border-radius: 20px;
+    border: none;
+    padding: 0 10px;
+    margin-left: 10px;
+    
+}
+.nright .notifications{
+    margin-right: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    color:rgb(55, 144, 228);
 }
