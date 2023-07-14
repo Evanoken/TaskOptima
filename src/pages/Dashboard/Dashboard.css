@@ -1,0 +1,79 @@
+.cdashboard{
+    color:white;
+    background-color: rgb(15, 14, 14);
+    height: 100vh;
+}
+
+.row1{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    gap: 45%;
+    align-items: center;
+    padding: 10px;
+}
+.col2 button{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    width: fit-content;
+    background-color: skyblue;
+    cursor:pointer;
+    padding: 15px;
+    border-radius: 20px;
+}
+.row2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px
+}
+.r2col1{
+    background-color:orange;
+    padding: 10px;
+    margin:10px;
+    height: 40vh;
+    border-radius:20px;
+}
+.r2col2{
+    background-color:rgb(146, 69, 146);
+    padding: 10px;
+    margin:10px;
+    height: 40vh;
+    border-radius:20px;
+}
+.r2col3{
+    background-color:rgb(105, 105, 179);
+    padding: 10px;
+    margin:10px;
+    height: 40vh;
+    border-radius:20px;
+}
+.row3{
+    display: flex;
+    flex-direction: row;
+    gap: 40%;
+    align-items:center;
+}
+.r3col1{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px;
+}
+.r3col2{
+    font-size: 20px;
+    margin: 10px;
+}
+.r3col2 button{
+    background-color: rgb(41, 35, 35);
+    border-radius:20px;
+    width:150px;
+    height: 40px;
+    padding: 10px;
+}
+.r3col2 button select{
+    background-color: rgb(41, 35, 35);
+    border: none;
+    color: rgb(233, 220, 196);
+    padding: 0 10px;
+}
+

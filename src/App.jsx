@@ -5,12 +5,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Login from './pages/Login/Login.jsx'
 import Forgotpassword from './pages/Login/Forgotpassword.jsx'
 import Dashboard from './pages/Dashboard/Dashboard.jsx'
-import Navbar from './components/navBar/Navbar.jsx'
+import Tasks from './tasks.jsx'
 function App() {
   return (
     <div>
       <Router>
-      <Navbar/>
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route exact path="/login" element={<Login />} />
@@ -18,8 +18,8 @@ function App() {
         <Route path="/forgotpassword" element={<Forgotpassword/>} />
         <Route path="/dashboard" element={<Dashboard/>}/>
         <Route path="*" element={<h1>Not Found</h1>} />
-        
-      </Routes>
+        <Route path="/tasks" element={<Tasks/>}/>
+              </Routes>
     </Router>
     </div>
   )

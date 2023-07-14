@@ -1,11 +1,14 @@
 import './Sidebar.css'
+import {Link } from 'react-router-dom'
 const Sidebar = () => {
   return (
     <div className="sidepanel">
       <div className="logo">Task Management</div>
       <ul className="navigation">
         <li className="active">
-          <a href="#">Overview</a>
+          <Link to='/dashboard'>
+          Overview
+          </Link>
         </li>
         <li>
           <a href="#">Projects</a>

@@ -18,7 +18,7 @@ export default function Login() {
 
   const onSubmit = (data) => {
     console.log(data);
-    navigate("/dashboard");
+    navigate("/tasks");
   };
 
   return (
