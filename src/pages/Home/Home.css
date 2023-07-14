@@ -1,0 +1,56 @@
+.homePage{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+.right {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+
+    background-color: #e8e7e7;
+    opacity: 0.7;
+  }
+  
+ .image1{
+    height: auto;
+    width: 100%;
+ }
+  
+.p1{
+    
+    font-size:20px;
+    font-weight: 60;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+    padding: 20px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    height: 75vh;
+}
+.bton{
+    background-color: #e8e7e7;
+    opacity: 0.7;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+
+}
+.btnc{
+  color:blue;
+  font-size: 50px;
+
+}
+
