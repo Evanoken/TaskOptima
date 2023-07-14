@@ -1,20 +1,27 @@
-import './Navbar.css'
+import "./Navbar.css";
 import { BsSearch } from "react-icons/bs";
+import Avator from "../../../src/assets/avatar.png";
 import { IoMdNotificationsOutline } from "react-icons/io";
+import { MdOutlineRoundaboutRight } from "react-icons/md";
+import { FiHelpCircle } from "react-icons/fi";
+import { ImBlog } from "react-icons/im";
+
 function Navbar() {
   return (
     <div className="Navbar">
       <div className="nleft">
-        <input type="text" name="" id="" placeholder='search anything here'/>
+        <input type="text" name="" id="" placeholder="search anything here" />
         {/* <BsSearch style={{marginLeft:5, fontSize:25}}/> */}
       </div>
       <div className="nright">
-        <IoMdNotificationsOutline className='notifications'/>
-        <img src="https://images.unsplash.com/photo-1621574534326-4b7b7b0b0b0b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z2lybCUyMG1hbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="" className='profile'/>
-
+        <IoMdNotificationsOutline className="notifications" />
+        <img src={Avator} alt="" className="profile" />
+        <MdOutlineRoundaboutRight className="about"/>
+        <FiHelpCircle className="about"/>
+        <ImBlog className="about"/>
       </div>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

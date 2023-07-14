@@ -36,3 +36,17 @@
     cursor: pointer;
     color:rgb(55, 144, 228);
 }
+.nright img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.about{
+    margin-right: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    color:rgb(38, 48, 20);
+}

@@ -1,10 +1,12 @@
 import './Sidebar.css'
-import {Link } from 'react-router-dom'
+import {Link} from 'react-router-dom'
+import Dashboard from '../../pages/Dashboard/Dashboard';
 const Sidebar = () => {
   return (
     <div className="sidepanel">
       <div className="logo">Task Management</div>
       <ul className="navigation">
+
         <li className="active">
           <Link to='/dashboard'>
           Overview

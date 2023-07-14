@@ -2,6 +2,10 @@
     color:white;
     background-color: rgb(15, 14, 14);
     height: 100vh;
+    max-width: 1200px;
+    margin-left: 280px;
+    padding: 20px;
+
 }
 
 .row1{
@@ -31,21 +35,21 @@
     background-color:orange;
     padding: 10px;
     margin:10px;
-    height: 40vh;
+    height: 30vh;
     border-radius:20px;
 }
 .r2col2{
     background-color:rgb(146, 69, 146);
     padding: 10px;
     margin:10px;
-    height: 40vh;
+    height: 30vh;
     border-radius:20px;
 }
 .r2col3{
     background-color:rgb(105, 105, 179);
     padding: 10px;
     margin:10px;
-    height: 40vh;
+    height: 30vh;
     border-radius:20px;
 }
 .row3{

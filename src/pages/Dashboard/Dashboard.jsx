@@ -1,8 +1,14 @@
 import React from "react";
 import "./Dashboard.css";
+import Navbar from '../../components/navBar/Navbar'
+import Sidebar from '../../components/sidebar/Sidebar'
 function Dashboard() {
   return (
+    <div className="cd">
+      <Navbar />
+      <Sidebar />
     <div className="cdashboard">
+      
       <div className="row1">
         <div className="col1">
           <h1>Projects Summary</h1>
@@ -31,6 +37,7 @@ function Dashboard() {
           </button>
         </div>
       </div>
+    </div>
     </div>
   );
 }
