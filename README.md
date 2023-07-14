@@ -1,5 +1,7 @@
 # TASK OPTIMA
 Task Optima is a professional and efficient task management system designed to help individuals and teams stay organized, increase productivity, and effectively manage their tasks and projects.
+![image](https://github.com/Evanoken/TaskOptima/assets/95754975/4af51eca-b7ef-482f-936a-8b5f4375c226)
+
 ## Features
 ### Task Organization:
 Easily create, assign, and manage tasks with customizable categories, due dates, and priority levels.
