@@ -11,7 +11,7 @@ function Navbar() {
     <div className="Navbar">
       <div className="nleft">
         <input type="text" name="" id="" placeholder="search anything here" />
-        {/* <BsSearch style={{marginLeft:5, fontSize:25}}/> */}
+        <BsSearch style={{marginLeft:5, fontSize:20}}/>
       </div>
       <div className="nright">
         <IoMdNotificationsOutline className="notifications" />

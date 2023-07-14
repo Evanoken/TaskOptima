@@ -1,6 +1,13 @@
 import './Sidebar.css'
 import {Link} from 'react-router-dom'
-import Dashboard from '../../pages/Dashboard/Dashboard';
+import {GrOverview} from 'react-icons/gr'
+import {GoProjectSymlink} from 'react-icons/go'
+import {BiMessageSquareDots} from 'react-icons/bi'
+import {MdOutlineGroups2} from 'react-icons/md'
+import {FcCalendar} from 'react-icons/fc'
+import {TbSettingsStar} from 'react-icons/tb'
+
+
 const Sidebar = () => {
   return (
     <div className="sidepanel">
@@ -8,27 +15,31 @@ const Sidebar = () => {
       <ul className="navigation">
 
         <li className="active">
-          <Link to='/dashboard'>
-          Overview
-          </Link>
+        <GrOverview style={{fontSize:30, marginRight:15}}/>
+          <Link to='/dashboard'> Overview </Link>
         </li>
         <li>
-          <a href="#">Projects</a>
+        <GoProjectSymlink style={{fontSize:30, marginRight:15}}/>
+          <Link> Projects</Link>
+        </li>
+        {/* <li>
+          <Link> Activity</Link> 
+        </li> */}
+        <li>
+        <BiMessageSquareDots style={{fontSize:30, marginRight:15}}/>
+          <Link> Messages</Link>
         </li>
         <li>
-          <a href="#">Activity</a>
+        <MdOutlineGroups2 style={{fontSize:30, marginRight:15}}/>
+          <Link> Members</Link> 
         </li>
         <li>
-          <a href="#">Messages</a>
+        <FcCalendar style={{fontSize:30, marginRight:15}}/>
+          <Link> Calendar</Link> 
         </li>
         <li>
-          <a href="#">Members</a>
-        </li>
-        <li>
-          <a href="#">Calendar</a>
-        </li>
-        <li>
-          <a href="#">Settings</a>
+        <TbSettingsStar style={{fontSize:30, marginRight:15}}/>
+          <Link> Settings</Link> 
         </li>
       </ul>
     </div>
