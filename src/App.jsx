@@ -8,6 +8,8 @@ import Dashboard from './pages/Dashboard/Dashboard.jsx'
 import Calendar from './pages/Calendar/Calendar.jsx'
 import Tasks from './tasks.jsx'
 import Settings from './pages/Settings/Settings.jsx'
+import Projects from "./pages/Projects/Projects.jsx";
+import Messages from "./pages/Messages/Messages.jsx";
 function App() {
   return (
     <div>
@@ -23,6 +25,8 @@ function App() {
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/tasks" element={<Tasks />} />
           <Route path="/settings" element={<Settings/>}/>
+          <Route path="/projects" element={<Projects/>}/>
+          <Route path="/messages" element={<Messages/>}/>
         </Routes>
       </Router>
     </div>

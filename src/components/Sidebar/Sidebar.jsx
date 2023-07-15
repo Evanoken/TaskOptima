@@ -20,14 +20,14 @@ const Sidebar = () => {
         </li>
         <li>
         <GoProjectSymlink style={{fontSize:30, marginRight:15}}/>
-          <Link> Projects</Link>
+          <Link to='/projects'> Projects</Link>
         </li>
         {/* <li>
           <Link> Activity</Link> 
         </li> */}
         <li>
         <BiMessageSquareDots style={{fontSize:30, marginRight:15}}/>
-          <Link> Messages</Link>
+          <Link to='/messages'> Messages</Link>
         </li>
         <li>
         <MdOutlineGroups2 style={{fontSize:30, marginRight:15}}/>
