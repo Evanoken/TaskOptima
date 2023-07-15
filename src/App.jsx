@@ -7,6 +7,7 @@ import Forgotpassword from './pages/Login/Forgotpassword.jsx'
 import Dashboard from './pages/Dashboard/Dashboard.jsx'
 import Calendar from './pages/Calendar/Calendar.jsx'
 import Tasks from './tasks.jsx'
+import Settings from './pages/Settings/Settings.jsx'
 function App() {
   return (
     <div>
@@ -21,6 +22,7 @@ function App() {
           <Route path="*" element={<h1>Not Found</h1>} />
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/tasks" element={<Tasks />} />
+          <Route path="/settings" element={<Settings/>}/>
         </Routes>
       </Router>
     </div>

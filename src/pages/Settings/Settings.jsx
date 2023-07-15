@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-
+import './Settings.css'
+import Sidebar from '../../components/sidebar/Sidebar';
+import Navbar from '../../components/navBar/Navbar';
 const SettingsPage = () => {
   const [profilePhoto, setProfilePhoto] = useState('');
   const [name, setName] = useState('');
@@ -124,15 +126,34 @@ const SettingsPage = () => {
 
   return (
     <div>
-      <h2>Settings</h2>
+        <Navbar/>
+        <Sidebar/>
+    
 
-      <h3>Profile Photo</h3>
-      <img src={profilePhoto} alt="Profile" />
-      <input type="file" accept="image/*" onChange={handleProfilePhotoChange} />
+    <div className='settings-container'>
+      <h2 className='settings-heading'>Settings</h2>
 
-      <h3>Name</h3>
-      <input type="text" value={name} onChange={handleNameChange} />
-
+      {/* Profile Photo */}
+      <div className="profile-photo-container">
+        <h3>Profile Photo</h3>
+        <img className="profile-photo" src={profilePhoto} alt="Profile" />
+        <input
+          className="profile-photo-input"
+          type="file"
+          accept="image/*"
+          onChange={handleProfilePhotoChange}
+        />
+      </div>
+       {/* Name */}
+       <div className="name-container">
+        <h3>Name</h3>
+        <input
+          className="name-input"
+          type="text"
+          value={name}
+          onChange={handleNameChange}
+        />
+      </div>
       <h3>Password</h3>
       <form onSubmit={handleSubmit}>
         <label htmlFor="currentPassword">Current Password:</label>
@@ -297,6 +318,7 @@ const SettingsPage = () => {
         />
         Show in-app notifications
       </label>
+    </div>
     </div>
   );
 };

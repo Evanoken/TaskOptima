@@ -39,7 +39,7 @@ const Sidebar = () => {
         </li>
         <li>
         <TbSettingsStar style={{fontSize:30, marginRight:15}}/>
-          <Link> Settings</Link> 
+          <Link to='/settings'> Settings</Link> 
         </li>
       </ul>
     </div>

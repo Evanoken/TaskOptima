@@ -1,0 +1,59 @@
+.settings-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .settings-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-photo-container {
+    margin-bottom: 20px;
+  }
+  
+  .profile-photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .profile-photo-input {
+    margin-top: 10px;
+  }
+  
+  .name-container {
+    margin-bottom: 20px;
+  }
+  
+  .name-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .password-container {
+    margin-bottom: 20px;
+  }
+  
+  .password-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .save-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+ 
+  
