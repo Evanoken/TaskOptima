@@ -35,7 +35,7 @@ const Sidebar = () => {
         </li>
         <li>
         <FcCalendar style={{fontSize:30, marginRight:15}}/>
-          <Link> Calendar</Link> 
+          <Link to='/calendar'> Calendar</Link> 
         </li>
         <li>
         <TbSettingsStar style={{fontSize:30, marginRight:15}}/>

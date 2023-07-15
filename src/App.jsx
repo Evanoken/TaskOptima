@@ -5,22 +5,24 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Login from './pages/Login/Login.jsx'
 import Forgotpassword from './pages/Login/Forgotpassword.jsx'
 import Dashboard from './pages/Dashboard/Dashboard.jsx'
+import Calendar from './pages/Calendar/Calendar.jsx'
 import Tasks from './tasks.jsx'
 function App() {
   return (
     <div>
       <Router>
-      
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route exact path="/login" element={<Login />} />
-        <Route exact path="/register" element={<Register />} />
-        <Route path="/forgotpassword" element={<Forgotpassword/>} />
-        <Route path="/dashboard" element={<Dashboard/>}/>
-        <Route path="*" element={<h1>Not Found</h1>} />
-        <Route path="/tasks" element={<Tasks/>}/>
-              </Routes>
-    </Router>
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/register" element={<Register />} />
+          <Route path="/forgotpassword" element={<Forgotpassword />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="*" element={<h1>Not Found</h1>} />
+          <Route path="/calendar" element={<Calendar />} />
+          <Route path="/tasks" element={<Tasks />} />
+        </Routes>
+      </Router>
     </div>
   )
 }

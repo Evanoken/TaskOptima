@@ -6,3 +6,8 @@
 @import "../../../node_modules/@syncfusion/ej2-navigations/styles/material.css";
 @import "../../../node_modules/@syncfusion/ej2-popups/styles/material.css";
 @import "../../../node_modules/@syncfusion/ej2-react-schedule/styles/material.css";
+.Calendar{
+    margin-left: 280px;
+    margin-top: 50px;
+    
+}
