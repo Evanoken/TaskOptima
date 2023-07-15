@@ -37,6 +37,10 @@
     margin:10px;
     height: 30vh;
     border-radius:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    /* align-items:center; */
 }
 .r2col2{
     background-color:rgb(146, 69, 146);
@@ -80,4 +84,31 @@
     color: rgb(233, 220, 196);
     padding: 0 10px;
 }
-
+.upcoming{
+    font-size: 40px;
+    color:rgb(62, 231, 231)
+}
+.right{
+    font-size: 30px;
+    width: 50px;
+    color:blueviolet;
+    cursor:pointer;
+}
+r2col1 h2{
+    font-size: 30px;
+    font-weight: bold;
+    color:rgb(231, 129, 62);
+    margin: 0 auto;
+}
+.available1{
+    font-size: 30px;
+    font-weight: bold;
+    color:rgb(127, 62, 231);
+    margin: 0;
+}
+.r2col1 span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}

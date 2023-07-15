@@ -2,6 +2,8 @@ import React from "react";
 import "./Dashboard.css";
 import Navbar from '../../components/navBar/Navbar'
 import Sidebar from '../../components/sidebar/Sidebar'
+import {MdUpcoming} from 'react-icons/md'
+import {AiOutlineArrowRight} from 'react-icons/ai'
 function Dashboard() {
   return (
     <div className="cd">
@@ -19,7 +21,12 @@ function Dashboard() {
         </div>
       </div>
       <div className="row2">
-        <div className="r2col1">hey thee</div>
+        <div className="r2col1">
+          <span><MdUpcoming className="upcoming"/> Upcoming</span>
+          {/* <h1>50</h1> */}
+          <p className="available1">50</p>
+          <p>check for <br />upcoming projects <br /> <AiOutlineArrowRight className="right"/></p>
+        </div>
         <div className="r2col2">hey there</div>
         <div className="r2col3">hey thsre</div>
       </div>
