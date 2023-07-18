@@ -1,7 +1,7 @@
 .cdashboard{
-    color:white;
-    background-color: rgb(15, 14, 14);
-    height: 100vh;
+    color:black;
+    background-color: rgb(228, 221, 207);
+    /* height: 100vh; */
     max-width: 1200px;
     margin-left: 280px;
     padding: 20px;
@@ -48,6 +48,10 @@
     margin:10px;
     height: 30vh;
     border-radius:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    /* align-items:center; */
 }
 .r2col3{
     background-color:rgb(105, 105, 179);
@@ -55,6 +59,10 @@
     margin:10px;
     height: 30vh;
     border-radius:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    /* align-items:center; */
 }
 .row3{
     display: flex;
@@ -111,4 +119,33 @@ r2col1 h2{
     flex-direction: row;
     align-items: center;
     gap: 30px;
+}
+.r2col2 span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+.r2col3 span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+.row4{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    padding: 10px;
+
+}
+.row4 .chart{
+    margin-top: 5vh;
+    width: 47%;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
