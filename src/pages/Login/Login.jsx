@@ -4,10 +4,12 @@ import { useNavigate, Link } from "react-router-dom";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import "./Login.css";
+import axios from "axios"; // Import Axios
+import { apiDomain } from "../../Utils/utils";
 
 const loginSchema = yup.object().shape({
-  username: yup.string().required("Username is required"),
-  password: yup.string().required("Password is required"),
+  UserName: yup.string().required("Username is required"),
+  Password: yup.string().required("Password is required"),
 });
 
 export default function Login() {
@@ -16,9 +18,18 @@ export default function Login() {
   });
   const navigate = useNavigate();
 
-  const onSubmit = (data) => {
-    console.log(data);
-    navigate("/tasks");
+  const onSubmit = async (data) => {
+    try {
+      const response = await axios.post(`${apiDomain}/auth/login`, data); // Update the API endpoint to match the backend login route
+      const { UserID, UserName, Email, FullName, PhoneNumber, token } = response.data;
+      localStorage.setItem("token", token);
+
+      // Redirect to the dashboard or any authenticated page after successful login
+      navigate("/dashboard");
+    } catch (error) {
+      console.error(error.response.data); // Log the error response if login fails
+      // Handle the error, e.g., show an error message to the user
+    }
   };
 
   return (
@@ -27,18 +38,18 @@ export default function Login() {
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-group">
           <label>Username</label>
-          <input type="text" {...register("username")} />
-          {errors.username && <p className="error">{errors.username.message}</p>}
+          <input type="text" {...register("UserName")} />
+          {errors.UserName && <p className="error">{errors.UserName.message}</p>}
         </div>
 
         <div className="form-group">
           <label>Password</label>
-          <input type="password" {...register("password")} />
-          {errors.password && <p className="error">{errors.password.message}</p>}
+          <input type="password" {...register("Password")} />
+          {errors.Password && <p className="error">{errors.Password.message}</p>}
         </div>
 
         <button type="submit">Login</button>
-        <p>Forgot password <Link to='/forgotpassword'>Click here</Link></p>
+        <p>Forgot Password <Link to='/forgotPassword'>Click here</Link></p>
       </form>
     </div>
   );

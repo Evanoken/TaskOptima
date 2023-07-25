@@ -45,7 +45,7 @@ function Forgotpassword() {
       <form onSubmit={handleSubmit}>
         <div>
           <label>Email:</label>
-          <input type="email" value={email} onChange={handleEmailChange} />
+          <input type="email" value={email} onChange={handleEmailChange} className='email1'/>
         </div>
         <button type="submit">Reset Password</button>
       </form>
