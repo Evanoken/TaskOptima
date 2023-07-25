@@ -1,0 +1,32 @@
+.cm{
+    margin-left: 280px;
+}
+.members-page {
+    
+    padding: 10px;
+  }
+  
+  .members-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .members-table th,
+  .members-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .members-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .members-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .members-table tbody tr:hover {
+    background-color: #e2e2e2;
+  }
+  

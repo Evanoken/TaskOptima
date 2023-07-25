@@ -31,7 +31,7 @@ const Sidebar = () => {
         </li>
         <li>
         <MdOutlineGroups2 style={{fontSize:30, marginRight:15}}/>
-          <Link> Members</Link> 
+          <Link to='/members'> Members</Link> 
         </li>
         <li>
         <FcCalendar style={{fontSize:30, marginRight:15}}/>

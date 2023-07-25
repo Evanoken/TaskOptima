@@ -17,24 +17,28 @@ function Dashboard() {
         
       </div>
       <div className="row2">
-        <div className="r2col1">hey thee</div>
-        <div className="r2col2">hey there</div>
-        <div className="r2col3">hey thsre</div>
-        <div className="r2col1">hey thee</div>
-        <div className="r2col2">hey there</div>
-        <div className="r2col3">hey thsre</div>
-        <div className="r2col1">hey thee</div>
-        <div className="r2col2">hey there</div>
-        <div className="r2col3">hey thsre</div>
-        <div className="r2col1">hey thee</div>
-        <div className="r2col2">hey there</div>
-        <div className="r2col3">hey thsre</div>
-        <div className="r2col1">hey thee</div>
-        <div className="r2col2">hey there</div>
-        <div className="r2col3">hey thsre</div>
-        <div className="r2col1">hey thee</div>
-        <div className="r2col2">hey there</div>
-        <div className="r2col3">hey thsre</div>
+        <div className="r2col1">
+            <span> Landing Page</span>
+            <p >Team: Team C</p>
+            <div style={{width: 150, backgroundColor: "white", height: 8, display: "flex", flexDirection: "row",borderRadius: 5 }}><span style={{width: 100, height: 10, backgroundColor: "green"}}></span> <span style={{fontSize: 13}}>70%</span></div> 
+     
+            <p>Time: 6days 9hrs and 20mins<br /> </p>
+          </div>
+          <div className="r2col1">
+            <span> Android app</span>
+            <p >Team: Team B</p>
+            <div style={{width: 150, backgroundColor: "white", height: 8, display: "flex", flexDirection: "row",borderRadius: 5 }}><span style={{width: 100, height: 10, backgroundColor: "green"}}></span> <span style={{fontSize: 13}}>70%</span></div> 
+     
+            <p>Time: 6days 9hrs and 20mins<br /> </p>
+          </div>
+          <div className="r2col1">
+            <span> Dashboard Page</span>
+            <p >Team: Team C</p>
+            <div style={{width: 150, backgroundColor: "white", height: 8, display: "flex", flexDirection: "row",borderRadius: 5 }}><span style={{width: 100, height: 10, backgroundColor: "green"}}></span> <span style={{fontSize: 13}}>70%</span></div> 
+     
+            <p>Time: 6days 9hrs and 20mins<br /> </p>
+          </div>
+          
       </div>
       <div className="row3">
         <div className="r3col1">

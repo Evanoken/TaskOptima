@@ -1,6 +1,6 @@
 .cprojects{
-    color:white;
-    background-color: rgb(15, 14, 14);
+    color:rgb(20, 2, 2);
+    background-color: rgb(224, 215, 215);
     /* height: 100vh; */
     max-width: 1200px;
     margin-left: 280px;
@@ -32,7 +32,7 @@
     gap: 30px
 }
 .r2col1{
-    background-color:orange;
+    background-color:rgb(143, 187, 226);
     padding: 10px;
     margin:10px;
     height: 30vh;

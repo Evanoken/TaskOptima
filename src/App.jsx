@@ -10,6 +10,7 @@ import Tasks from './tasks.jsx'
 import Settings from './pages/Settings/Settings.jsx'
 import Projects from "./pages/Projects/Projects.jsx";
 import Messages from "./pages/Messages/Messages.jsx";
+import Members from './pages/Members/Members.jsx'
 function App() {
   return (
     <div>
@@ -27,6 +28,7 @@ function App() {
           <Route path="/settings" element={<Settings/>}/>
           <Route path="/projects" element={<Projects/>}/>
           <Route path="/messages" element={<Messages/>}/>
+          <Route path="/members" element={<Members/>}/>
         </Routes>
       </Router>
     </div>

@@ -158,7 +158,7 @@ const SettingsPage = () => {
       <form onSubmit={handleSubmit}>
         <label htmlFor="currentPassword">Current Password:</label>
         <input
-          type="password"
+          type="password" className="password-input"
           name="currentPassword"
           value={currentPassword}
           onChange={handlePasswordChange}
@@ -166,7 +166,7 @@ const SettingsPage = () => {
 
         <label htmlFor="newPassword">New Password:</label>
         <input
-          type="password"
+          type="password" className="password-input"
           name="newPassword"
           value={newPassword}
           onChange={handlePasswordChange}
@@ -174,80 +174,15 @@ const SettingsPage = () => {
 
         <label htmlFor="confirmNewPassword">Confirm New Password:</label>
         <input
-          type="password"
+          type="password" className="password-input"
           name="confirmNewPassword"
           value={confirmNewPassword}
           onChange={handlePasswordChange}
         />
 
-        <button type="submit">Save Changes</button>
+        <button type="submit" style={{marginTop: 10, width: 180}}>Save Changes</button>
       </form>
-
-      <h3>Email Preferences</h3>
-      <label>
-        <input
-          type="checkbox"
-          name="promotional"
-          checked={emailPreferences.promotional}
-          onChange={handleEmailPreferencesChange}
-        />
-        Receive promotional emails
-      </label>
-
-      <label>
-        <input
-          type="checkbox"
-          name="notifications"
-          checked={emailPreferences.notifications}
-          onChange={handleEmailPreferencesChange}
-        />
-        Receive notifications
-      </label>
-
-      <label>
-        <input
-          type="checkbox"
-          name="newsletters"
-          checked={emailPreferences.newsletters}
-          onChange={handleEmailPreferencesChange}
-        />
-        Subscribe to newsletters
-      </label>
-
-      <h3>Privacy Settings</h3>
-      <label>
-        Profile Visibility:
-        <select
-          name="profileVisibility"
-          value={privacySettings.profileVisibility}
-          onChange={handlePrivacySettingsChange}
-        >
-          <option value="public">Public</option>
-          <option value="private">Private</option>
-          <option value="friends">Friends</option>
-        </select>
-      </label>
-
-      <label>
-        Data Visibility:
-        <select
-          name="dataVisibility"
-          value={privacySettings.dataVisibility}
-          onChange={handlePrivacySettingsChange}
-        >
-          <option value="all">All</option>
-          <option value="limited">Limited</option>
-          <option value="none">None</option>
-        </select>
-      </label>
-
-      <h3>Language</h3>
-      <select value={language} onChange={handleLanguageChange}>
-        <option value="en">English</option>
-        <option value="fr">French</option>
-        <option value="es">Spanish</option>
-        {/* Add more language options as needed */}
-      </select>
+  
 
       <h3>Theme</h3>
       <select value={theme} onChange={handleThemeChange}>
@@ -255,69 +190,6 @@ const SettingsPage = () => {
         <option value="dark">Dark</option>
       </select>
 
-      <h3>Two-Factor Authentication</h3>
-      <label>
-        <input
-          type="checkbox"
-          checked={twoFactorAuthEnabled}
-          onChange={handleTwoFactorAuthToggle}
-        />
-        Enable two-factor authentication
-      </label>
-
-      <h3>Connected Accounts</h3>
-      <label>
-        <input
-          type="checkbox"
-          name="facebook"
-          checked={connectedAccounts.includes('facebook')}
-          onChange={handleConnectedAccountToggle}
-        />
-        Connect with Facebook
-      </label>
-
-      <label>
-        <input
-          type="checkbox"
-          name="twitter"
-          checked={connectedAccounts.includes('twitter')}
-          onChange={handleConnectedAccountToggle}
-        />
-        Connect with Twitter
-      </label>
-
-      {/* Add more connected account options as needed */}
-
-      <h3>Notification Settings</h3>
-      <label>
-        <input
-          type="checkbox"
-          name="push"
-          checked={notificationSettings.push}
-          onChange={handleNotificationSettingsChange}
-        />
-        Enable push notifications
-      </label>
-
-      <label>
-        <input
-          type="checkbox"
-          name="email"
-          checked={notificationSettings.email}
-          onChange={handleNotificationSettingsChange}
-        />
-        Receive email notifications
-      </label>
-
-      <label>
-        <input
-          type="checkbox"
-          name="inApp"
-          checked={notificationSettings.inApp}
-          onChange={handleNotificationSettingsChange}
-        />
-        Show in-app notifications
-      </label>
     </div>
     </div>
   );

@@ -1,9 +1,13 @@
 import React from "react";
 import { useForm } from "react-hook-form";
-import { useNavigate,Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import './Register.css'
+import axios from 'axios';
+import { apiDomain } from "../../Utils/utils";
+
+import './Register.css';
+
 const schema = yup.object().shape({
   fullName: yup.string().required("Full name is required"),
   username: yup.string().required("Username is required"),
@@ -15,21 +19,32 @@ const schema = yup.object().shape({
     .required("Phone number is required"),
 });
 
-export default function Register () {
+export default function Register() {
   const { register, handleSubmit, formState: { errors } } = useForm({
     resolver: yupResolver(schema),
   });
   const navigate = useNavigate();
 
-  const onSubmit = (data) => {
-    console.log(data);
-    navigate("/login");
+  const onSubmit = async (data) => {
+    try {
+      const response = await axios.post(`${apiDomain}/auth/register`, data);
+
+      if (response.status === 200) {
+        console.log(response.data);
+        navigate("/login");
+      } else if (response.status === 409) {
+        console.log(response.data.error);
+      } else {
+        console.log("An error occurred while creating the user");
+      }
+    } catch (error) {
+      console.log("An error occurred while creating the user");
+    }
   };
 
   return (
-  
     <form onSubmit={handleSubmit(onSubmit)} className="container">
-        <h1>Registration page</h1>
+      <h1>Registration page</h1>
       <div>
         <label>Full Name</label>
         <input type="text" {...register("fullName")} />
@@ -61,13 +76,7 @@ export default function Register () {
       </div>
 
       <button type="submit">Submit</button>
-        <p>Already have an account <Link to='/login'>Login</Link></p>
-    
+      <p>Already have an account <Link to='/login'>Login</Link></p>
     </form>
   );
 };
-
-
-
-
-

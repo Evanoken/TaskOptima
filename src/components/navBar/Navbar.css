@@ -50,3 +50,61 @@
     cursor: pointer;
     color:rgb(38, 48, 20);
 }
+
+/* Add your existing CSS styles for Navbar here */
+
+.modal {
+    position: fixed;
+    top: 30px;
+    left: 250px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal h3 {
+    margin-bottom: 10px;
+  }
+  
+  .modal button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .modal button:hover {
+    background-color: #0056b3;
+  }
+  
+ 
+
+.notification-wrapper {
+    position: relative;
+  }
+  
+  .notification-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 6px;
+    border-radius: 50%;
+  }
+  
+ 
+  

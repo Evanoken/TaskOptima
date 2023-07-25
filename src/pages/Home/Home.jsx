@@ -11,7 +11,7 @@ function Home() {
 
   return (
     <div className='homePage'>
-        <div className="left">
+        <div className="lefth">
           <h1>Get all your job done here</h1>
           <h3>Welcome to the Task Management System</h3>
           <br />
@@ -20,7 +20,7 @@ function Home() {
        <button className='bton' title='click here to get started' onClick={handleClick}><AiOutlineArrowRight className='btnc'/></button>
        </Link>   
         </div>
-        <div className="right">
+        <div className="righth">
         <h2>Stay Organized with taskz</h2>
         <img src={image1} alt="image" className='image1'/>
         </div>
